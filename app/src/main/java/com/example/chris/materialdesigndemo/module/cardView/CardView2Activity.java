@@ -7,7 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.example.chris.materialdesigndemo.R;
-import com.example.chris.materialdesigndemo.adapter.UIAdapter;
+import com.example.chris.materialdesigndemo.adapter.CardViewAdapter;
 
 /**
  * Created by Admin on 2016/7/23.
@@ -20,7 +20,7 @@ public class CardView2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_card_view);
         recyclerView = (RecyclerView) findViewById(R.id.weekPlanFrm_recyclerView);
-        recyclerView.setAdapter(new UIAdapter(this, R.layout.listview_card_item2, 20));
+        recyclerView.setAdapter(new CardViewAdapter(this, R.layout.listview_card_item2, 20));
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         //recyclerView.addItemDecoration(new DividerItemDecoration(this, layoutManager.getOrientation()));
         recyclerView.setLayoutManager(layoutManager);

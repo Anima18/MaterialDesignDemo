@@ -18,9 +18,7 @@
         <com.example.chris.materialdesigndemo.view.CardImageView
             android:id="@+id/cardList_imageView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scaleType="fitCenter"
-            android:src="@drawable/bitch"/>
+            android:layout_height="wrap_content"/>
 
         <LinearLayout
             android:layout_width="match_parent"
