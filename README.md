@@ -15,8 +15,6 @@
 # Simple
 1. ListView  
   - Single-Line  
-  
-  ![image](https://github.com/Anima18/MaterialDesignDemo/blob/master/image/single_line_listview.png)
 2. Button
 3. CardView
 4. Dialog
