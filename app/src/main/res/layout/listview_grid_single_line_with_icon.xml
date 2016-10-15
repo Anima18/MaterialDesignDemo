@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ideaLv_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginRight="4dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <!-- Main Content View -->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.chris.materialdesigndemo.view.GridImageView
+            android:id="@+id/gridAct_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/girl2"
+            android:layout_centerInParent="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignBottom="@id/gridAct_image"
+            android:layout_alignLeft="@id/gridAct_image"
+            android:background="#40000000"
+            android:paddingLeft="16dp"
+            android:paddingRight="8dp">
+
+            <ImageView
+                android:id="@+id/gridList_img"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_info"/>
+
+            <TextView
+                android:id="@+id/gridList_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/gridList_img"
+                android:text="hello world"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

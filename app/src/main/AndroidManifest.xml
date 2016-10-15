@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chris.materialdesigndemo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name=".util.MyApplication"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ListViewActivity" android:label="ListViewActivity"/>
+        <activity android:name=".CardViewActivity" android:label="CardViewActivity"/>
+        <activity android:name=".module.listView.SingleLineWithIconActivity" android:label="SingleLineWithIcon"/>
+        <activity android:name=".module.listView.SingleLineWithAvatarActivity" android:label="SingleLineWithAvatar"/>
+        <activity android:name=".module.listView.SingleLineWithAvatarAndIconActivity" android:label="SingleLineWithAvatarAndIcon"/>
+        <activity android:name=".module.listView.TwoLineOnlyTextActivity" android:label="TwoLineOnlyText"/>
+        <activity android:name=".module.listView.TwoLineWithIconActivity" android:label="TwoLineWithIcon"/>
+        <activity android:name=".module.listView.TwoLineWithAvatarActivity" android:label="TwoLineWithAvatar"/>
+        <activity android:name=".module.listView.TwoLineWithAvatarAndIconActivity" android:label="TwoLineWithAvatarAndIcon"/>
+        <activity android:name=".module.listView.ThreeLineOnlyTextActivity" android:label="ThreeLineOnlyText"/>
+        <activity android:name=".module.listView.ThreeLineWithIconActivity" android:label="ThreeLineWithIcon"/>
+        <activity android:name=".module.listView.ThreeLineWithAvatarActivity" android:label="ThreeLineWithAvatar"/>
+        <activity android:name=".module.listView.ThreeLineWithAvatarAndIconActivity" android:label="ThreeLineWithAvatarAndIcon"/>
+        <activity android:name=".ButtonActivity" android:label="ButtonActivity"/>
+        <activity android:name=".module.cardView.CardViewActivity" android:label="CardViewActivity"/>
+        <activity android:name=".module.cardView.CardView2Activity" android:label="CardView2Activity"/>
+        <activity android:name=".module.cardView.CardView3Activity" android:label="CardView3Activity"/>
+        <activity android:name=".module.cardView.CardView4Activity" android:label="CardView4Activity"/>
+        <activity android:name=".module.cardView.CardView5Activity" android:label="CardView5Activity"/>
+        <activity android:name=".GridViewActivity" android:label="GridViewActivity"/>
+        <activity android:name=".module.gridView.GridViewOnlyImageActivity" android:label="GridViewOnlyImageActivity"/>
+        <activity android:name=".module.gridView.GridViewSingleLineOnlyTextActivity" android:label="GridViewSingleLineOnlyTextActivity"/>
+        <activity android:name=".module.gridView.GridViewSingleLineWithIconActivity" android:label="GridViewSingleLineWithIconActivity"/>
+        <activity android:name=".module.gridView.GridViewTwoLineOnlyTextActivity" android:label="GridViewTwoLineOnlyTextActivity"/>
+        <activity android:name=".module.gridView.GridViewTwoLineWithIconActivity" android:label="GridViewTwoLineWithIconActivity"/>
+        <activity android:name=".MenuActivity" android:label="MenuActivity"/>
+        <activity android:name=".SwipeRecyclerActivity" android:label="SwipeRecyclerActivity"/>
+        <activity android:name=".SelectionActivity" android:label="SelectionActivity"/>
+        <activity android:name=".TabActivity" android:label="TabActivity"/>
+    </application>
+
+</manifest>

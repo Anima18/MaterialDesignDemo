@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:gravity="center_vertical"
+    android:background="?android:attr/selectableItemBackground">
+    <!--<ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/compass"/>-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/girl" />
+
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/list_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/mainList_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="72dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/list_icon"
+        android:textSize="16sp"
+        android:textColor="@color/primary_text_dark_color"
+        android:text="hello world"
+        />
+</RelativeLayout>

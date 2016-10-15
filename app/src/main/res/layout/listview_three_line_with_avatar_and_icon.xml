@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:background="?android:attr/selectableItemBackground">
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/list_icon"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentRight="true"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignTop="@id/list_icon"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/girl" />
+
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/list_icon"
+        android:paddingLeft="72dp"
+        android:layout_toLeftOf="@id/list_icon"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/list_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/primary_text_dark_color"
+            android:text="Three line item"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/list_title_tv"
+            android:textSize="14sp"
+            android:lines="2"
+            android:textColor="@color/secondary_text_dark_color"
+            android:text="Add 8dp of padding at the top and bottom of a list, except for lists with subheaders, which have their own padding."/>
+    </LinearLayout>
+
+</RelativeLayout>

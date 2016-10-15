@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBackground">#EEEEEE</color>
+    <color name="colorListVIewBackground">#FFFFFF</color>
+    <color name="tab_text_inactive">#DDDDDD</color>
+
+    <!-- text color -->
+    <color name="primary_text_dark_color">#212121</color>
+    <color name="secondary_text_dark_color">#727272</color>
+    <color name="disabled_text_dark_color">#B8B8B8</color>
+    <color name="divider_text_dark_color">#DADADA</color>
+    <color name="primary_text_white_color">#FFFFFF</color>
+    <color name="secondary_text_white_color">#FDFDFD</color>
+    <color name="disabled_text_white_color">#FBFBFB</color>
+    <color name="divider_text_white_color">#F9F9F9</color>
+
+    <color name="dividing_line_color">#EEEEEE</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="white">#FFFFFF</color>
+
+</resources>

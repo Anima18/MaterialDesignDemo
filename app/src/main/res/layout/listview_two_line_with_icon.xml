@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:gravity="center_vertical"
+    android:background="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_film"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="16dp"
+        android:paddingLeft="72dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/list_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/primary_text_dark_color"
+            android:text="Tow line item"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/list_title_tv"
+            android:textSize="14sp"
+            android:textColor="@color/secondary_text_dark_color"
+            android:text="Secondary text"/>
+    </LinearLayout>
+
+</RelativeLayout>

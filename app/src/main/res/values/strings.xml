@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MaterialDesignDemo</string>
+
+    <string name="dialog_title">提示</string>
+    <string name="dialog_button_positive">確認</string>
+    <string name="dialog_button_negative">取消</string>
+</resources>
