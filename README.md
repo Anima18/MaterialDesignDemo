@@ -38,7 +38,7 @@
   ![image](https://github.com/Anima18/MaterialDesignDemo/blob/master/image/cardView2.jpg)
   ![image](https://github.com/Anima18/MaterialDesignDemo/blob/master/image/cardView3.jpg)
   ![image](https://github.com/Anima18/MaterialDesignDemo/blob/master/image/cardView4.jpg)
-4. Dialog
+4. Dialog  
   ![image](https://github.com/Anima18/MaterialDesignDemo/blob/master/image/dialog.jpg)
 5. GridView  
   ![image](https://github.com/Anima18/MaterialDesignDemo/blob/master/image/gradView1.jpg)
