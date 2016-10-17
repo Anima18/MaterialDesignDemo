@@ -14,6 +14,8 @@ import android.view.WindowManager;
 import com.example.chris.materialdesigndemo.R;
 import com.example.chris.materialdesigndemo.view.CardImageView;
 
+import java.io.InputStream;
+
 /**
  * Created by Admin on 2015/8/19.
  */
@@ -24,6 +26,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.ViewHo
     private int itemSize;
     private int windowWidth;
     private int windowHeitht;
+    private int imageId;
 
     private static OnItemClickListener listener;
     // Define the listener interface
@@ -41,6 +44,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.ViewHo
         this.context = context;
         this.layoutId = layoutId;
         this.itemSize = itemSize;
+        this.imageId = R.drawable.bitch;
         WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
         DisplayMetrics dm = new DisplayMetrics();
         wm.getDefaultDisplay().getMetrics(dm);
@@ -66,23 +70,45 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.ViewHo
     // Involves populating data into the item through holder
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-/*
-        holder.imageView.measure(View.MeasureSpec.UNSPECIFIED, View.MeasureSpec.UNSPECIFIED);
-        holder.imageView.getMeasuredWidth();
-*/
 
-
+        InputStream is = context.getResources().openRawResource(this.imageId);
         BitmapFactory.Options opts =  new BitmapFactory.Options();
         opts.inJustDecodeBounds = true;
-        BitmapFactory.decodeResource(context.getResources(), R.drawable.bitch, opts);
+
+        BitmapFactory.decodeStream(is, null, opts);
+        //BitmapFactory.decodeResource(context.getResources(), imageIds.get(position), opts);
+
         int imgWidth = opts.outWidth;
         int imgHeight = opts.outHeight;
+        Log.i("ImageAdapter", "imgWidth:"+imgWidth+", imgHeight:"+imgHeight);
+
+        Log.i("ImageAdapter", "imgWidthddd:"+windowWidth+", imgHeightddd:"+windowHeitht);
         int scaleX = imgWidth/windowWidth;  //水平方向的缩放比
 
+        int scaleY = imgHeight/windowHeitht; //垂直方向的缩放比
+        Log.i("ImageAdapter", "scaleX:"+scaleX+", scaleY:"+scaleY);
+
+        int scale = 1; //缩放比
+
+        if(scaleX >= scaleY && scaleY >= 1){
+
+            scale = scaleX;
+
+        }else if(scaleY >= scaleX && scaleX >= 1){
+
+            scale = scaleY;
+
+        }
+
+        //接下来解析图片
+        Log.i("ImageAdapter", "scale:"+scale);
         opts.inJustDecodeBounds = false;
         //采样率
-        opts.inSampleSize = scaleX + 2;
-        Bitmap bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.bitch, opts);
+
+        opts.inSampleSize = scale;
+
+        //Bitmap bitmap = BitmapFactory.decodeResource(context.getResources(), imageIds.get(position), opts);
+        Bitmap bitmap = BitmapFactory.decodeStream(is, null, opts);
         holder.imageView.setImageBitmap(bitmap);
     }
 
