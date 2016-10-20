@@ -1,4 +1,4 @@
-package com.example.chris.materialdesigndemo.module.cardView;
+package com.example.chris.materialdesigndemo.module.cardview;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

@@ -1,4 +1,4 @@
-package com.example.chris.materialdesigndemo.module.tabView;
+package com.example.chris.materialdesigndemo.module.tabview;
 
 
 import android.os.Bundle;

@@ -11,6 +11,7 @@ import android.widget.Toast;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.example.chris.materialdesigndemo.adapter.MainAdapter;
 import com.example.chris.materialdesigndemo.entity.ActivityClass;
+import com.example.chris.materialdesigndemo.module.navigationview.NavigationViewActivity;
 import com.example.chris.materialdesigndemo.view.DividerItemDecoration;
 
 import java.util.ArrayList;
@@ -70,13 +71,13 @@ public class MainActivity extends AppCompatActivity {
         activityClassList.add(new ActivityClass("SwipeRecycler", SwipeRecyclerActivity.class));
         activityClassList.add(new ActivityClass("Selection", SelectionActivity.class));
         activityClassList.add(new ActivityClass("Tab", TabActivity.class));
-        activityClassList.add(new ActivityClass("Snackbars & toasts", null));
+        activityClassList.add(new ActivityClass("Snackbars & toasts", FABAndSnackBarActivity.class));
         activityClassList.add(new ActivityClass("Steppers", null));
         activityClassList.add(new ActivityClass("Subheaders", null));
         activityClassList.add(new ActivityClass("Empty states", null));
         activityClassList.add(new ActivityClass("Errors", null));
         activityClassList.add(new ActivityClass("Launch screens", null));
-        activityClassList.add(new ActivityClass("Navigation drawer", null));
+        activityClassList.add(new ActivityClass("Navigation drawer", NavigationViewActivity.class));
         activityClassList.add(new ActivityClass("Scrolling techniques", null));
         activityClassList.add(new ActivityClass("Search", null));
         activityClassList.add(new ActivityClass("Settings", null));

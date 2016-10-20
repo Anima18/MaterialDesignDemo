@@ -7,9 +7,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 import com.example.chris.materialdesigndemo.adapter.ViewPagerAdapter;
-import com.example.chris.materialdesigndemo.module.tabView.FragmentTab1;
-import com.example.chris.materialdesigndemo.module.tabView.FragmentTab2;
-import com.example.chris.materialdesigndemo.module.tabView.FragmentTab3;
+import com.example.chris.materialdesigndemo.module.tabview.FragmentTab1;
+import com.example.chris.materialdesigndemo.module.tabview.FragmentTab2;
+import com.example.chris.materialdesigndemo.module.tabview.FragmentTab3;
 import com.example.chris.materialdesigndemo.view.SlidingTabLayout;
 
 import java.util.ArrayList;

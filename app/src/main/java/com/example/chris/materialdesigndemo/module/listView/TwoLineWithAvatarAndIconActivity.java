@@ -1,4 +1,4 @@
-package com.example.chris.materialdesigndemo.module.listView;
+package com.example.chris.materialdesigndemo.module.listview;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

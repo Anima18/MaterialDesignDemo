@@ -10,10 +10,10 @@ import android.widget.Toast;
 
 import com.example.chris.materialdesigndemo.adapter.MainAdapter;
 import com.example.chris.materialdesigndemo.entity.ActivityClass;
-import com.example.chris.materialdesigndemo.module.cardView.CardView2Activity;
-import com.example.chris.materialdesigndemo.module.cardView.CardView3Activity;
-import com.example.chris.materialdesigndemo.module.cardView.CardView4Activity;
-import com.example.chris.materialdesigndemo.module.cardView.CardView5Activity;
+import com.example.chris.materialdesigndemo.module.cardview.CardView2Activity;
+import com.example.chris.materialdesigndemo.module.cardview.CardView3Activity;
+import com.example.chris.materialdesigndemo.module.cardview.CardView4Activity;
+import com.example.chris.materialdesigndemo.module.cardview.CardView5Activity;
 import com.example.chris.materialdesigndemo.view.DividerItemDecoration;
 
 import java.util.ArrayList;
@@ -59,7 +59,7 @@ public class CardViewActivity extends AppCompatActivity {
     public void initData() {
         activityClassList = new ArrayList<>();
 
-        activityClassList.add(new ActivityClass("CardView", com.example.chris.materialdesigndemo.module.cardView.CardViewActivity.class));
+        activityClassList.add(new ActivityClass("CardView", com.example.chris.materialdesigndemo.module.cardview.CardViewActivity.class));
         activityClassList.add(new ActivityClass("CardView2", CardView2Activity.class));
         activityClassList.add(new ActivityClass("CardView3", CardView3Activity.class));
         activityClassList.add(new ActivityClass("CardView4", CardView4Activity.class));

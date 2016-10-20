@@ -1,4 +1,4 @@
-package com.example.chris.materialdesigndemo.module.gridView;
+package com.example.chris.materialdesigndemo.module.gridview;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

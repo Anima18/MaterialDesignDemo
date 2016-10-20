@@ -10,11 +10,11 @@ import android.widget.Toast;
 
 import com.example.chris.materialdesigndemo.adapter.MainAdapter;
 import com.example.chris.materialdesigndemo.entity.ActivityClass;
-import com.example.chris.materialdesigndemo.module.gridView.GridViewOnlyImageActivity;
-import com.example.chris.materialdesigndemo.module.gridView.GridViewSingleLineOnlyTextActivity;
-import com.example.chris.materialdesigndemo.module.gridView.GridViewSingleLineWithIconActivity;
-import com.example.chris.materialdesigndemo.module.gridView.GridViewTwoLineOnlyTextActivity;
-import com.example.chris.materialdesigndemo.module.gridView.GridViewTwoLineWithIconActivity;
+import com.example.chris.materialdesigndemo.module.gridview.GridViewOnlyImageActivity;
+import com.example.chris.materialdesigndemo.module.gridview.GridViewSingleLineOnlyTextActivity;
+import com.example.chris.materialdesigndemo.module.gridview.GridViewSingleLineWithIconActivity;
+import com.example.chris.materialdesigndemo.module.gridview.GridViewTwoLineOnlyTextActivity;
+import com.example.chris.materialdesigndemo.module.gridview.GridViewTwoLineWithIconActivity;
 import com.example.chris.materialdesigndemo.view.DividerItemDecoration;
 
 import java.util.ArrayList;

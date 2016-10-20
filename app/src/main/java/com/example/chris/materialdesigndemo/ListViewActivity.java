@@ -10,17 +10,17 @@ import android.widget.Toast;
 
 import com.example.chris.materialdesigndemo.adapter.MainAdapter;
 import com.example.chris.materialdesigndemo.entity.ActivityClass;
-import com.example.chris.materialdesigndemo.module.listView.SingleLineWithAvatarActivity;
-import com.example.chris.materialdesigndemo.module.listView.SingleLineWithAvatarAndIconActivity;
-import com.example.chris.materialdesigndemo.module.listView.SingleLineWithIconActivity;
-import com.example.chris.materialdesigndemo.module.listView.ThreeLineOnlyTextActivity;
-import com.example.chris.materialdesigndemo.module.listView.ThreeLineWithAvatarActivity;
-import com.example.chris.materialdesigndemo.module.listView.ThreeLineWithAvatarAndIconActivity;
-import com.example.chris.materialdesigndemo.module.listView.ThreeLineWithIconActivity;
-import com.example.chris.materialdesigndemo.module.listView.TwoLineOnlyTextActivity;
-import com.example.chris.materialdesigndemo.module.listView.TwoLineWithAvatarActivity;
-import com.example.chris.materialdesigndemo.module.listView.TwoLineWithAvatarAndIconActivity;
-import com.example.chris.materialdesigndemo.module.listView.TwoLineWithIconActivity;
+import com.example.chris.materialdesigndemo.module.listview.SingleLineWithAvatarActivity;
+import com.example.chris.materialdesigndemo.module.listview.SingleLineWithAvatarAndIconActivity;
+import com.example.chris.materialdesigndemo.module.listview.SingleLineWithIconActivity;
+import com.example.chris.materialdesigndemo.module.listview.ThreeLineOnlyTextActivity;
+import com.example.chris.materialdesigndemo.module.listview.ThreeLineWithAvatarActivity;
+import com.example.chris.materialdesigndemo.module.listview.ThreeLineWithAvatarAndIconActivity;
+import com.example.chris.materialdesigndemo.module.listview.ThreeLineWithIconActivity;
+import com.example.chris.materialdesigndemo.module.listview.TwoLineOnlyTextActivity;
+import com.example.chris.materialdesigndemo.module.listview.TwoLineWithAvatarActivity;
+import com.example.chris.materialdesigndemo.module.listview.TwoLineWithAvatarAndIconActivity;
+import com.example.chris.materialdesigndemo.module.listview.TwoLineWithIconActivity;
 import com.example.chris.materialdesigndemo.view.DividerItemDecoration;
 
 import java.util.ArrayList;
