@@ -2,7 +2,6 @@ package com.example.chris.materialdesigndemo;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -17,21 +16,23 @@ import com.example.chris.materialdesigndemo.view.DividerItemDecoration;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     private RecyclerView recyclerView;
     private List<ActivityClass> activityClassList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setLayoutId(R.layout.activity_main);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
         initData();
         initView();
         initEvent();
     }
 
     public void initView() {
+        setTitle("MaterialDesignDemo");
+
         recyclerView = (RecyclerView) findViewById(R.id.mainAct_data_rv);
         MainAdapter adapter = new MainAdapter(this, activityClassList);
         adapter.setOnItemClickListener(new MainAdapter.OnItemClickListener() {
@@ -74,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         activityClassList.add(new ActivityClass("Snackbars & toasts", FABAndSnackBarActivity.class));
         activityClassList.add(new ActivityClass("Steppers", null));
         activityClassList.add(new ActivityClass("Subheaders", null));
-        activityClassList.add(new ActivityClass("Empty states", null));
+        activityClassList.add(new ActivityClass("Empty states", EmptyActivity.class));
         activityClassList.add(new ActivityClass("Errors", null));
         activityClassList.add(new ActivityClass("Launch screens", null));
         activityClassList.add(new ActivityClass("Navigation drawer", NavigationViewActivity.class));

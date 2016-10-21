@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
@@ -18,7 +17,7 @@ import com.example.chris.materialdesigndemo.view.DividerItemDecoration;
 /**
  * Created by Admin on 2015/8/22.
  */
-public class FABAndSnackBarActivity extends AppCompatActivity implements View.OnClickListener {
+public class FABAndSnackBarActivity extends BaseActivity implements View.OnClickListener {
 
     private FloatingActionButton addFab;
     private RecyclerView rvUsers;
@@ -27,9 +26,8 @@ public class FABAndSnackBarActivity extends AppCompatActivity implements View.On
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setLayoutId(R.layout.activity_fab);
         super.onCreate(savedInstanceState);
-        
-        setContentView(R.layout.activity_fab);
         initView();
         initEnvent();
     }

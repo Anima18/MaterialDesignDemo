@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
+    <include layout="@layout/toolbar_common"/>
 
     <android.support.design.widget.CoordinatorLayout
         android:id="@+id/activity_fab_coordinatorLayout"

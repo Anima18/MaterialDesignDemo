@@ -3,7 +3,6 @@ package com.example.chris.materialdesigndemo;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 import com.example.chris.materialdesigndemo.adapter.ViewPagerAdapter;
@@ -15,7 +14,7 @@ import com.example.chris.materialdesigndemo.view.SlidingTabLayout;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TabActivity extends AppCompatActivity {
+public class TabActivity extends BaseActivity {
 
     static final String LOG_TAG = "SlidingTabsBasicFragment";
     private SlidingTabLayout mSlidingTabLayout;
@@ -23,8 +22,8 @@ public class TabActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setLayoutId(R.layout.activity_tab);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tab);
         //以下代码用于去除阴影
         /*if(Build.VERSION.SDK_INT>=21){
             getSupportActionBar().setElevation(0);

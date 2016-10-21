@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:fitsSystemWindows="true">
+
+    <include layout="@layout/toolbar_common" />
 
     <com.malinskiy.superrecyclerview.SuperRecyclerView
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -13,4 +16,4 @@
         app:layout_moreProgress="@layout/layout_more_progress"
         app:mainLayoutId="@layout/layout_recyclerview_verticalscroll"/>
 
-</RelativeLayout>
+</LinearLayout>

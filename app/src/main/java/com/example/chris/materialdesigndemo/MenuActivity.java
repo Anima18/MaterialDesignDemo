@@ -2,7 +2,6 @@ package com.example.chris.materialdesigndemo;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.ListPopupWindow;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,15 +15,15 @@ import com.example.chris.materialdesigndemo.adapter.MenuAdapter;
 /**
  * Created by Admin on 2016/8/4.
  */
-public class MenuActivity extends AppCompatActivity implements View.OnClickListener {
+public class MenuActivity extends BaseActivity implements View.OnClickListener {
 
     private Button menuButton;
     ListPopupWindow listPopupWindow;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+        setLayoutId(R.layout.activity_menu);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu);
 
         menuButton = (Button)findViewById(R.id.menuAct_button);
         menuButton.setOnClickListener(this);

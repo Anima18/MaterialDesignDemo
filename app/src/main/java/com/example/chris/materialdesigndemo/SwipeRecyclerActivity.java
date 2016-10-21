@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.util.Log;
 import android.view.View;
@@ -22,7 +21,7 @@ import java.util.ArrayList;
 /**
  * Created by Administrator on 2015/9/16.
  */
-public class SwipeRecyclerActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener, OnMoreListener {
+public class SwipeRecyclerActivity extends BaseActivity implements SwipeRefreshLayout.OnRefreshListener, OnMoreListener {
 
     private static final String LOG = "SwipeRecyclerActivity";
     private SuperRecyclerView mRecycler;
@@ -31,8 +30,8 @@ public class SwipeRecyclerActivity extends AppCompatActivity implements SwipeRef
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setLayoutId(R.layout.activity_swipe_recycler);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_swipe_recycler);
         initView();
         initData();
         initEvent();

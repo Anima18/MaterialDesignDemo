@@ -2,7 +2,6 @@ package com.example.chris.materialdesigndemo;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatCheckBox;
 import android.support.v7.widget.SwitchCompat;
 import android.view.View;
@@ -13,11 +12,11 @@ import android.widget.Toast;
 /**
  * Created by Admin on 2016/8/7.
  */
-public class SelectionActivity extends AppCompatActivity {
+public class SelectionActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+        setLayoutId(R.layout.activity_selection);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_selection);
         getSupportActionBar().setElevation(0);
     }
 

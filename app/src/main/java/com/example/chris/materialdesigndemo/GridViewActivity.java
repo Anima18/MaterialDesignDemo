@@ -2,7 +2,6 @@ package com.example.chris.materialdesigndemo;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -23,14 +22,14 @@ import java.util.List;
 /**
  * Created by Admin on 2016/7/24.
  */
-public class GridViewActivity extends AppCompatActivity {
+public class GridViewActivity extends BaseActivity {
     private RecyclerView recyclerView;
     private List<ActivityClass> activityClassList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setLayoutId(R.layout.activity_main);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
         initData();
         initView();
         initEvent();
