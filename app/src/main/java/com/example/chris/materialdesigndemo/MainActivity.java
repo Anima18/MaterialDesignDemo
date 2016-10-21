@@ -76,7 +76,7 @@ public class MainActivity extends BaseActivity {
         activityClassList.add(new ActivityClass("Steppers", null));
         activityClassList.add(new ActivityClass("Subheaders", null));
         activityClassList.add(new ActivityClass("Empty states", EmptyActivity.class));
-        activityClassList.add(new ActivityClass("Errors", null));
+        activityClassList.add(new ActivityClass("Errors", ErrorListActivity.class));
         activityClassList.add(new ActivityClass("Launch screens", null));
         activityClassList.add(new ActivityClass("Navigation drawer", NavigationViewActivity.class));
         activityClassList.add(new ActivityClass("Scrolling techniques", null));

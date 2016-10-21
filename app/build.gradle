@@ -30,4 +30,5 @@ dependencies {
     compile 'com.afollestad.material-dialogs:core:0.8.6.2'
     compile 'com.afollestad.material-dialogs:commons:0.8.6.2'
     compile 'com.malinskiy:superrecyclerview:1.1.4'
+    compile 'com.wdullaer:materialdatetimepicker:2.1.1'
 }

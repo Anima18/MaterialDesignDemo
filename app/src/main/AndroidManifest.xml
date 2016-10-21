@@ -48,6 +48,8 @@
         <activity android:name=".FABAndSnackBarActivity" android:label="FABAndSnackBarActivity"/>
         <activity android:name=".module.navigationview.NavigationViewActivity" android:label="NavigationViewActivity" />
         <activity android:name=".EmptyActivity" android:label="EmptyActivity" />
+        <activity android:name=".ErrorListActivity" android:label="ErrorListActivity"/>
+        <activity android:name=".module.error.InputErrorActivity" android:label="InputErrorActivity" />
     </application>
 
 </manifest>
