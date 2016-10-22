@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.example.chris.materialdesigndemo.adapter.MainAdapter;
 import com.example.chris.materialdesigndemo.entity.ActivityClass;
+import com.example.chris.materialdesigndemo.module.error.ActionErrorActivity;
 import com.example.chris.materialdesigndemo.module.error.InputErrorActivity;
 import com.example.chris.materialdesigndemo.view.DividerItemDecoration;
 
@@ -56,7 +57,7 @@ public class ErrorListActivity extends BaseActivity {
         activityClassList = new ArrayList<>();
 
         activityClassList.add(new ActivityClass("Input Error", InputErrorActivity.class));
-        activityClassList.add(new ActivityClass("Action Error", null));
+        activityClassList.add(new ActivityClass("Action Error", ActionErrorActivity.class));
     }
 
     public void initEvent() {

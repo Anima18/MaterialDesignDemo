@@ -4,6 +4,8 @@ package com.example.chris.materialdesigndemo.module.error;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TextInputLayout;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -136,6 +138,28 @@ public class InputErrorActivity extends BaseActivity implements View.OnClickList
                     showTimeDialog();
                 }
                 break;
+        }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_info, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.act_info:
+                new MaterialDialog.Builder(InputErrorActivity.this)
+                        .title("Input Error")
+                        .content("输入错误，由TextInputLayout显示。但发现输入有误，EditText会变成红色而且显示错误信息。")
+                        .positiveText("agree")
+                        .negativeText("disagree")
+                        .show();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
     }
 
