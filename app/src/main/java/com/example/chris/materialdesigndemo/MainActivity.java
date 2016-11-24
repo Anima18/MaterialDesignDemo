@@ -82,6 +82,7 @@ public class MainActivity extends BaseActivity {
         activityClassList.add(new ActivityClass("Scrolling techniques", null));
         activityClassList.add(new ActivityClass("Search", null));
         activityClassList.add(new ActivityClass("Settings", null));
+        activityClassList.add(new ActivityClass("Introduce", GuideActivity.class));
     }
 
     public void initEvent() {
