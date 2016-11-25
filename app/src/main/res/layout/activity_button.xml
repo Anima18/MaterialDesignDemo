@@ -6,8 +6,6 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
 
-    <include layout="@layout/toolbar_common"/>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -53,6 +51,8 @@
             app:rippleColor="#33728dff"
             android:onClick="FABClick"/>
     </LinearLayout>
+
+    <include layout="@layout/toolbar_common"/>
 
 
 </LinearLayout>

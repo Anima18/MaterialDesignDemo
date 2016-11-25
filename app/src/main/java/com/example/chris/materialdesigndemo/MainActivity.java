@@ -83,6 +83,8 @@ public class MainActivity extends BaseActivity {
         activityClassList.add(new ActivityClass("Search", null));
         activityClassList.add(new ActivityClass("Settings", null));
         activityClassList.add(new ActivityClass("Introduce", GuideActivity.class));
+		activityClassList.add(new ActivityClass("Login", LoginActivity.class));
+        activityClassList.add(new ActivityClass("Register", RegisterActivity.class));
     }
 
     public void initEvent() {
