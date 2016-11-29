@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.example.chris.materialdesigndemo.adapter.MainAdapter;
 import com.example.chris.materialdesigndemo.entity.ActivityClass;
+import com.example.chris.materialdesigndemo.module.listview.SingleLineWithIconActivity2;
 import com.example.chris.materialdesigndemo.module.listview.SingleLineWithAvatarActivity;
 import com.example.chris.materialdesigndemo.module.listview.SingleLineWithAvatarAndIconActivity;
 import com.example.chris.materialdesigndemo.module.listview.SingleLineWithIconActivity;
@@ -69,6 +70,7 @@ public class ListViewActivity extends BaseActivity {
 
         activityClassList.add(new ActivityClass("Single-line list only text", ListViewActivity.class));
         activityClassList.add(new ActivityClass("Single-line list with icon", SingleLineWithIconActivity.class));
+        activityClassList.add(new ActivityClass("Single-line list with icon2", SingleLineWithIconActivity2.class));
         activityClassList.add(new ActivityClass("Single-line list whit avatar", SingleLineWithAvatarActivity.class));
         activityClassList.add(new ActivityClass("Single-line list whit avatar and icon", SingleLineWithAvatarAndIconActivity.class));
         activityClassList.add(new ActivityClass("Two-line list whit only text", TwoLineOnlyTextActivity.class));
