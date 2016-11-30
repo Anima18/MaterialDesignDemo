@@ -56,6 +56,7 @@
         <activity android:name=".GuideActivity"/>
 	    <activity android:name=".LoginActivity"/>
         <activity android:name=".RegisterActivity"/>
+        <activity android:name=".CollapsingToolBarActivity"/>
     </application>
 
 </manifest>

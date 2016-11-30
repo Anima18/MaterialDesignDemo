@@ -85,6 +85,7 @@ public class MainActivity extends BaseActivity {
         activityClassList.add(new ActivityClass("Introduce", GuideActivity.class));
 		activityClassList.add(new ActivityClass("Login", LoginActivity.class));
         activityClassList.add(new ActivityClass("Register", RegisterActivity.class));
+        activityClassList.add(new ActivityClass("CollapsingToolBar", CollapsingToolBarActivity.class));
     }
 
     public void initEvent() {
