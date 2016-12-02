@@ -13,7 +13,7 @@ import com.example.chris.materialdesigndemo.util.SystemBarTintManager;
  */
 
 public class BaseActivity extends AppCompatActivity {
-    private Toolbar toolbar;
+    protected Toolbar toolbar;
     private int layoutId;
 
     protected void setLayoutId(int layoutId) {

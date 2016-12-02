@@ -4,4 +4,10 @@
     <string name="dialog_title">提示</string>
     <string name="dialog_button_positive">確認</string>
     <string name="dialog_button_negative">取消</string>
+    
+    <string name="bottom_nav_home">首页</string>
+    <string name="bottom_nav_role">角色</string>
+    <string name="bottom_nav_plan">计划</string>
+    <string name="bottom_nav_idea">构想</string>
+    <string name="bottom_nav_me">我</string>
 </resources>
