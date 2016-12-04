@@ -58,6 +58,7 @@
         <activity android:name=".RegisterActivity"/>
         <activity android:name=".CollapsingToolBarActivity"/>
         <activity android:name=".BottomNavigationViewActivity"/>
+        <activity android:name=".SearchToolbarActivity"/>
     </application>
 
 </manifest>

@@ -11,7 +11,7 @@ import com.afollestad.materialdialogs.MaterialDialog;
 import com.example.chris.materialdesigndemo.adapter.MainAdapter;
 import com.example.chris.materialdesigndemo.entity.ActivityClass;
 import com.example.chris.materialdesigndemo.module.navigationview.NavigationViewActivity;
-import com.example.chris.materialdesigndemo.view.DividerItemDecoration;
+import com.example.chris.materialdesigndemo.view.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -87,6 +87,7 @@ public class MainActivity extends BaseActivity {
         activityClassList.add(new ActivityClass("Register", RegisterActivity.class));
         activityClassList.add(new ActivityClass("CollapsingToolBar", CollapsingToolBarActivity.class));
         activityClassList.add(new ActivityClass("BottomNavigation", BottomNavigationViewActivity.class));
+        activityClassList.add(new ActivityClass("SearchToolbarActivity", SearchToolbarActivity.class));
     }
 
     public void initEvent() {

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/colorPrimary"
+    style="@android:style/Widget.Material.Toolbar">
+
+    <ImageButton
+        android:id="@+id/imageButton_toolbar_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-6dp"
+        android:layout_marginLeft="-6dp"
+        android:src="@drawable/ic_idea"
+        style="@android:style/Widget.Material.Toolbar.Button.Navigation"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/ic_idea"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/imageButton_toolbar_more"
+        android:background="@drawable/edittext_background_nothing"
+        android:textSize="14sp"
+        android:hint="查询事情或者计划"/>
+
+
+</RelativeLayout>
