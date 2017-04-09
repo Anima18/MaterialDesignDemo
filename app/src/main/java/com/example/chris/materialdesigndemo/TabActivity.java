@@ -3,9 +3,14 @@ package com.example.chris.materialdesigndemo;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.chris.materialdesigndemo.adapter.ViewPagerAdapter;
+import com.example.chris.materialdesigndemo.entity.Message;
 import com.example.chris.materialdesigndemo.module.tabview.FragmentTab1;
 import com.example.chris.materialdesigndemo.module.tabview.FragmentTab2;
 import com.example.chris.materialdesigndemo.module.tabview.FragmentTab3;
@@ -14,11 +19,14 @@ import com.example.chris.materialdesigndemo.view.SlidingTabLayout;
 import java.util.ArrayList;
 import java.util.List;
 
+import de.greenrobot.event.EventBus;
+
 public class TabActivity extends BaseActivity {
 
     static final String LOG_TAG = "SlidingTabsBasicFragment";
     private SlidingTabLayout mSlidingTabLayout;
     private ViewPager mViewPager;
+    private Spinner mSpinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +42,22 @@ public class TabActivity extends BaseActivity {
 
 
     public void initTabView() {
+        mSpinner = (Spinner) findViewById(R.id.toolbar_spinner);
+        mSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                String value = (String)adapterView.getSelectedItem();
+                Log.i("Chris", value);
+                EventBus.getDefault().post(new Message(value));
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+
+
         mViewPager = (ViewPager) findViewById(R.id.viewpager);
         List<Fragment> fragmentList = new ArrayList<Fragment>();
         fragmentList.add(new FragmentTab1());

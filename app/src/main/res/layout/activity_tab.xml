@@ -2,11 +2,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
     tools:context=".TabActivity">
 
-    <include layout="@layout/toolbar_common"/>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_toolBar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:fitsSystemWindows="true">
+        <Spinner
+            android:id="@+id/toolbar_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/languages"
+            />
+    </android.support.v7.widget.Toolbar>
 
     <com.example.chris.materialdesigndemo.view.SlidingTabLayout
         android:id="@+id/sliding_tabs"
