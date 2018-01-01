@@ -88,6 +88,7 @@ public class MainActivity extends BaseActivity {
         activityClassList.add(new ActivityClass("CollapsingToolBar", CollapsingToolBarActivity.class));
         activityClassList.add(new ActivityClass("BottomNavigation", BottomNavigationViewActivity.class));
         activityClassList.add(new ActivityClass("SearchToolbarActivity", SearchToolbarActivity.class));
+        activityClassList.add(new ActivityClass("PermissionActivity", PermissionActivity.class));
     }
 
     public void initEvent() {
