@@ -55,6 +55,8 @@ public class PermissionActivity extends AppCompatActivity {
                             }
                         });
 
+                alertDialogBuilder.show();
+
             } else {
 
                 // No explanation needed, we can request the permission.

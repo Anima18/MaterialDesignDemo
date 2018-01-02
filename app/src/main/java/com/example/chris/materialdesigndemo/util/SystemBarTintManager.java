@@ -44,6 +44,7 @@ import java.lang.reflect.Method;
  * translucent system UI modes.
  *
  */
+@SuppressWarnings("ResourceType")
 public class SystemBarTintManager {
 
     static {
